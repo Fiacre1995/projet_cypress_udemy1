@@ -1,0 +1,16 @@
+{
+  "name": "projet_udemy1",
+  "version": "1.0.0",
+  "description": "1- Initialisation duprojet : npm init -y",
+  "main": "index.js",
+  "scripts": {
+    "execution_claude": "npx cypress run --record --key e3a7065e-2fca-4158-8120-29d6de6cc8a9",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^15.11.0"
+  }
+}
