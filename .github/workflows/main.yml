@@ -5,10 +5,13 @@ on: push
 jobs:
 
   cypress-run:   
-    runs-on: windows-latest   // Spécifie l'environnement d'exécution (Windows)
+    runs-on: ubuntu-latest   // Spécifie l'environnement d'exécution (Ubuntu dans sa dernière version)
     steps:   
       - name: Checkout repository   // Étape pour récupérer le code du dépôt sur l'environnement d'exécution
         uses: actions/checkout@v4   // Utilise l'action officielle pour le checkout
 
       - name: Run Cypress tests   // Étape pour exécuter les tests Cypress
         uses: cypress-io/github-action@v6   // Utilise l'action officielle de Cypress pour installer le dépendances et exécuter les tests
+
+        #with:
+            #// browser: chrome   // Spécifie le navigateur à utiliser pour les tests (ici, Chrome)
